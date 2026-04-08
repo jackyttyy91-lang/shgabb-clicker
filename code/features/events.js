@@ -624,7 +624,7 @@ function renderEggEvent() {
     render = render + "<button class='easterButton' onclick='useEggs(4)'>Guaranteed<br />random epic Artifact<br />100 " + cImg("egg") + "</button>";
     render += "</div>"
     
-    render = render + "<br /><button class='easterButton' style='height: 256px;' onclick='useEggs(7)'>" + getArtifact(323).render(false) + "50 " + cImg("egg") + "</button>";
+    render = render + "<br /><button class='easterButton' style='height: 256px;' onclick='useEggs(7)'>" + getArtifact(323).render(false) + "20 " + cImg("egg") + "</button>";
     
 
     ui.eventRender.innerHTML = render;
@@ -676,7 +676,7 @@ function refreshEgg() {
         switch (egg.area) {
             case "upgrades":
                 getArtifact(323).boost = "shgabb";
-                getArtifact(323).amount = 1 +  level;
+                getArtifact(323).amount = 1 + level;
                 break;
             case "gemoffers":
                 getArtifact(323).boost = "gems";
@@ -723,7 +723,7 @@ function clickEgg(event) {
         }
     }, 200);
 
-    getArtifact(323).amount *= 2;
+    if (getArtifact(323).isEquipped()) getArtifact(323).amount *= 2;
     updateArtifacts();
 
     createNotification("Egg found");
@@ -823,9 +823,9 @@ function useEggs(offerNR) {
 
             break;
         case 7:
-            if (game.eggs < 50) return false;
+            if (game.eggs < 20) return false;
 
-            game.eggs -= 50;
+            game.eggs -= 20;
             awardArtifact(323);
 
             break;
