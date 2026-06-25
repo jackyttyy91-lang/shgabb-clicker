@@ -6,6 +6,15 @@
     <title>Shgabb Clicker</title>
     <link href="style/main.css" rel="stylesheet" type="text/css">
 
+    <script>
+        // little script for balnoom.com/shgabb-clicker to fix paths / index
+        if (window.location.hostname.includes("balnoom.com")) {
+            let base = document.createElement("base");
+            base.href = "/shgabb-clicker/";
+            document.head.appendChild(base);
+        }
+    </script>
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
