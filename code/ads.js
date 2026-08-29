@@ -313,7 +313,7 @@ function determineLeastUsedBoost() {
 
 function selectVideo() {
     // Select which video you will see
-    let adVideoPicker = Math.ceil(Math.random() * 7)
+    let adVideoPicker = Math.ceil(Math.random() * 13)
     switch (adVideoPicker) {
         case 1:
             adHandler.src = "videos/elmenda_bad_as_always.mp4";
@@ -335,6 +335,24 @@ function selectVideo() {
             break;
         case 7:
             adHandler.src = "videos/Certaphone d24 low battery.mp4";
+            break;
+        case 8:
+            adHandler.src = "videos/Comp-1-1.mp4";
+            break;
+        case 9:
+            adHandler.src = "videos/Comp-2-1.mp4";
+            break;
+        case 10:
+            adHandler.src = "videos/keepem.mp4";
+            break;
+        case 11:
+            adHandler.src = "videos/tjnc.mp4";
+            break;
+        case 12:
+            adHandler.src = "videos/tjmc.mp4";
+            break;
+        case 13:
+            adHandler.src = "videos/tjpb1.mp4";
             break;
     }
 }
