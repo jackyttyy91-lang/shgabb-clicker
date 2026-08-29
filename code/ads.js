@@ -46,20 +46,20 @@ class Ad {
 }
 
 const ads = {
-    strongerClicks: new Ad("strongerClicks", "Stronger Clicks", "5x click Shgabb (5:00)",
-        5 * 60, () => 5, () => true),
-    strongerAuto: new Ad("strongerAuto", "Stronger Auto", "5x auto Shgabb (10:00)",
-        10 * 60, () => 5, () => true),
-    moreSandwiches: new Ad("moreSandwiches", "More Sandwiches", "4x Sandwich chance (3:00)",
-        3 * 60, () => 4, () => true),
-    fasterShgabb: new Ad("fasterShgabb", "Faster Shgabb", "5x shorter click CD (1:00)",
-        1 * 60, () => 5, () => true),
-    moreCrits: new Ad("moreCrits", "More Crits", "5x chance and 3x boost (3:00)",
-        3 * 60, () => [5, 3], () => true),
-    moreSilicone: new Ad("moreSilicone", "More Silicone", "10x Silicone Shgabb (5:00)",
-        5 * 60, () => 10, () => unlockedSilicone()),
-    moreGems: new Ad("moreGems", "More Gems", "3x Gem chance (8:00)",
-        8 * 60, () => 3, () => unlockedGems())
+    strongerClicks: new Ad("strongerClicks", "Stronger Clicks", "10x click Shgabb (15:00)",
+        15 * 60, () => 10, () => true),
+    strongerAuto: new Ad("strongerAuto", "Stronger Auto", "10x auto Shgabb (20:00)",
+        20 * 60, () => 10, () => true),
+    moreSandwiches: new Ad("moreSandwiches", "More Sandwiches", "10x Sandwich chance (10:00)",
+        10 * 60, () => 10, () => true),
+    fasterShgabb: new Ad("fasterShgabb", "Faster Shgabb", "10x shorter click CD (5:00)",
+        5 * 60, () => 10, () => true),
+    moreCrits: new Ad("moreCrits", "More Crits", "10x chance and 10x boost (10:00)",
+        10 * 60, () => [10, 10], () => true),
+    moreSilicone: new Ad("moreSilicone", "More Silicone", "10x Silicone Shgabb (15:00)",
+        15 * 60, () => 10, () => unlockedSilicone()),
+    moreGems: new Ad("moreGems", "More Gems", "10x Gem chance (10:00)",
+        10 * 60, () => 10, () => unlockedGems())
 };
 
 // unlocked functions
@@ -313,7 +313,7 @@ function determineLeastUsedBoost() {
 
 function selectVideo() {
     // Select which video you will see
-    let adVideoPicker = Math.ceil(Math.random() * 6)
+    let adVideoPicker = Math.ceil(Math.random() * 7)
     switch (adVideoPicker) {
         case 1:
             adHandler.src = "videos/elmenda_bad_as_always.mp4";
@@ -332,6 +332,9 @@ function selectVideo() {
             break;
         case 6:
             adHandler.src = "videos/Mend_car_crashing_vid.mp4";
+            break;
+        case 7:
+            adHandler.src = "videos/Certaphone d24 low battery.mp4";
             break;
     }
 }
