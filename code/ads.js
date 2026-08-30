@@ -64,7 +64,7 @@ const ads = {
 
 // unlocked functions
 function unlockedAds() {
-    return game.stats.sw >= 10;
+    return game.stats.sw >= 1;
 }
 
 function unlockedChengas() {
