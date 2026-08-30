@@ -17,16 +17,16 @@ var game = {
     idleModeTime: 0,
 
     // currencies
-    shgabb: new Decimal(1e100),
-    sw: new Decimal(1e6),
-    gs: new Decimal(1e33),
-    si: new Decimal(1e63),
-    ame: 0,
+    shgabb: new Decimal(1e303),
+    sw: new Decimal(1e33),
+    gs: new Decimal(1e100),
+    si: new Decimal(1e200),
+    ame: 1e5,
     amess: 0,
     ameUp: [0, 0, 0, 0, 0],
-    bags: 0,
-    cop: new Decimal(0),
-    gems: 1000,
+    bags: 1e12,
+    cop: new Decimal(1e5),
+    gems: 1e12,
     gemboost: 0,
     gemb: 0,
     artifactScrap: 0,
@@ -36,11 +36,11 @@ var game = {
     event: "", // for etenvs (temp events)
     eventd: 0, // day
     eventh: 0, // hour
-    pearls: 0,
-    bananas: 0,
+    pearls: 1e6,
+    bananas: 1e12,
     bananaseeds: 0,
     bananatrees: [],
-    iron: 0,
+    iron: 1000,
     scrapyardLevel: 0,
     scrapyardTaps: 0,
     scrapyardTapsReq: 1,
@@ -157,7 +157,7 @@ var game = {
         AMEgsBoost2: 0,
         achBExpo: 0,
 
-        nothing: 0,
+        nothing: 100,
         AMEfridge: 0,
         AMEcritBoost: 0,
         unlockUnlevel: 0,
