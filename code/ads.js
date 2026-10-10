@@ -46,20 +46,20 @@ class Ad {
 }
 
 const ads = {
-    strongerClicks: new Ad("strongerClicks", "Stronger Clicks", "100x click Shgabb (15:00)",
-        20 * 60, () => 100, () => true),
-    strongerAuto: new Ad("strongerAuto", "Stronger Auto", "100x auto Shgabb (20:00)",
-        20 * 60, () => 100, () => true),
-    moreSandwiches: new Ad("moreSandwiches", "More Sandwiches", "100x Sandwich chance (10:00)",
-        20 * 60, () => 100, () => true),
-    fasterShgabb: new Ad("fasterShgabb", "Faster Shgabb", "10x shorter click CD (5:00)",
-        20 * 60, () => 10, () => true),
-    moreCrits: new Ad("moreCrits", "More Crits", "100x chance and 100x boost (10:00)",
-        10 * 60, () => [100, 100], () => true),
-    moreSilicone: new Ad("moreSilicone", "More Silicone", "100x Silicone Shgabb (15:00)",
-        20 * 60, () => 100, () => unlockedSilicone()),
-    moreGems: new Ad("moreGems", "More Gems", "100x Gem chance (10:00)",
-        20 * 60, () => 100, () => unlockedGems())
+    strongerClicks: new Ad("strongerClicks", "Stronger Clicks", "100x click Shgabb (60:00)",
+        60 * 60, () => 100, () => true),
+    strongerAuto: new Ad("strongerAuto", "Stronger Auto", "100x auto Shgabb (60:00)",
+        60 * 60, () => 100, () => true),
+    moreSandwiches: new Ad("moreSandwiches", "More Sandwiches", "100x Sandwich chance (60:00)",
+        60 * 60, () => 100, () => true),
+    fasterShgabb: new Ad("fasterShgabb", "Faster Shgabb", "10x shorter click CD (30:00)",
+        30 * 60, () => 10, () => true),
+    moreCrits: new Ad("moreCrits", "More Crits", "100x chance and 100x boost (60:00)",
+        60 * 60, () => [100, 100], () => true),
+    moreSilicone: new Ad("moreSilicone", "More Silicone", "100x Silicone Shgabb (60:00)",
+        60 * 60, () => 100, () => unlockedSilicone()),
+    moreGems: new Ad("moreGems", "More Gems", "100x Gem chance (60:00)",
+        60 * 60, () => 100, () => unlockedGems())
 };
 
 // unlocked functions
