@@ -63,13 +63,9 @@ const ads = {
 };
 
 // unlocked functions
-function unlockedAds() {
-    return game.stats.sw >= 1;
-}
+function unlockedAds() {}
 
-function unlockedChengas() {
-    return game.stats.hms >= 7000;
-}
+function unlockedChengas() {}
 
 
 
