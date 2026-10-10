@@ -354,5 +354,8 @@ function selectVideo() {
         case 13:
             adHandler.src = "videos/tjpb1.mp4";
             break;
+        case 14:
+            adHandler.src = "videos/Happy_Tree_Friends_Spin_Fun_Knowing_Ya_Without_Music.mp4.mp4";
+            break;
     }
 }
