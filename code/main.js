@@ -1135,11 +1135,6 @@ function exportToFile() {
     if (game.cheated != true) exportGame("file");
 }
 
-function exportGame(destination = "gimme") {
-    if (game.cheated == true) {
-        alert("You can't export a cheated save!");
-        createNotification("Couldn't export: Cheated");
-        return false;
     }
     
     let exporter = {};
