@@ -63,9 +63,13 @@ const ads = {
 };
 
 // unlocked functions
-function unlockedAds() {}
+function unlockedAds() {
+    return game.stats.sw >= 10;
+}
 
-function unlockedChengas() {}
+function unlockedChengas() {
+    return game.stats.hms >= 7000;
+}
 
 
 
@@ -204,7 +208,7 @@ function canPlayAds() {
         adStatus = "loaded";
 
         ui.adContent.style.display = "";
-        adHandler.volume = 0.2;
+        adHandler.volume = 1;
         adHandler.disablePictureInPicture = true
     }
 }
